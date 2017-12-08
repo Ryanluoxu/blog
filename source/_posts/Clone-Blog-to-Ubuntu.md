@@ -34,7 +34,7 @@ Now project is on the github.
 # clone project to Ubuntu
 
 ```bash
-$ git push -u origin master	#1 install git
+$ sudo apt-get install git-core	#1 install git
 $ mkdir ~/git			#2 create folder git under home
 $ cd ~/git
 $ git clone https://github.com/Ryanluoxu/hexoBlog.git	#3 clone project from github
