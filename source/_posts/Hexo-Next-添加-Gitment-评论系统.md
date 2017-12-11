@@ -2,7 +2,7 @@
 title: Hexo-Next 添加 Gitment 评论系统
 date: 2017-11-27 23:05:32
 categories: 搭建博客
-tags: [Hexo, Nexy, 博客, 主题优化, 评论, Gitment]
+tags: [Hexo, Next, 博客, 主题优化, 评论, Gitment]
 ---
 
 **声明：本文为 ryanluoxu 原创文章，欢迎转载，请在明显位置注明出处。**

@@ -175,22 +175,24 @@ $ git push -u origin master		#org
 1. create empty remote repo: `myProject`
 2. git bash on `~/workspace`
 3. clone repo
-```
-git clone <**/myProject.git>	# create `~/workspace/myProject`
-```
+	```
+	git clone <**/myProject.git>	# create `~/workspace/myProject`
+	```
 4. copy existing project files into `~/workspace/myProject`
 5. git push to remote repo
-```bash
-cd ~/workspace/myProject
-git add --all
-git commit -m "initial commit"
-git push
-```
-6. Add local repo to Eclipse 
+	```bash
+	cd ~/workspace/myProject
+	git add --all
+	git commit -m "initial commit"
+	git push
+	```	
+6. Add local repo to Eclipse. 
 	- open git repo window
 	- add local git repo and choose `~/workspace/myProject`
 7. Go to working directory and import existing project
 8. Once code change. 
 	- Right click project
 	- team - commit - give commit message - commit and push
+
+
 

@@ -2,7 +2,7 @@
 title: Hexo 的 Next 主题优化
 date: 2017-11-26 13:49:21
 categories: 搭建博客
-tags: [Hexo, Nexy, 博客, 主题优化]
+tags: [Hexo, Next, 博客, 主题优化]
 ---
 
 **声明：本文为 ryanluoxu 原创文章，欢迎转载，请在明显位置注明出处。**
