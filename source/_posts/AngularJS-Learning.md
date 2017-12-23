@@ -152,10 +152,119 @@ myApp.controller("myController", function ($scope) {
 			}); 
 	```
 
+## 4. Directive: ng-src
+
+- add `image` folder to project with an image
+- use `ng-scr` to ensure a request is issued only after NG has evaluated.
+- no 404 error
+
+### JS
+```
+var myApp = angular
+		.module("myModule",[])
+		.controller("myController", function ($scope) {
+			var topic = {		
+				name: "Git",				
+				picture: "image/Git-Cycle1.png"		#source-path
+			};
+			$scope.topic = topic;
+		}); 
+```
+
+### HTML
+```
+<div ng-controller="myController">
+	
+	<div>
+		Topic : {{ topic.name }}
+	</div>
+	
+	<img ng-src="{{ topic.picture }}" 		#dynamic
+		alt="{{ topic.name + ' picture' }}"			
+		style="height:300px; width:400px"/>
+	
+</div>
+```
 
 
+## 5. Two-way DataBinding & ng-model
+
+### Two-way data binding
+- keep model and view in sync at all time
+- `$scope.message` won't change
+- `ng-model="message"` and `{{ message }}` will keep the same
+- model takes value from js initially. Once change, model value changes. 
+
+```
+var myApp = angular
+		.module("myModule",[])
+		.controller("myController", function ($scope) {
+		
+			$scope.message = "Hello World.."
+		
+		}); 
+
+<div ng-controller="myController">
+	
+	<input type="text" ng-model="message"/>
+	<br/><br/>	
+	{{ message }}
+	
+</div>
+
+```
+
+### ng-model
+used for
+- input
+- select
+- textarea
+
+### Demo
+
+```
+# JS
+var myApp = angular
+		.module("myModule",[])
+		.controller("myController", function ($scope) {
+			
+			var customer = {
+					name: "ryan",
+					age: "29"
+			};
+			
+			$scope.customer = customer;
+		}); 
 
 
+# HTML
+<div ng-controller="myController">
+	<table>
+		<tr>
+			<td>Name</td>
+			<td><input type="text" ng-model="customer.name"/></td>
+		</tr>
+		<tr>
+			<td>Age</td>
+			<td><input type="text" ng-model="customer.age"/></td>
+		</tr>
+	</table>
+	<br/>
+	<table>
+		<tr>
+			<td>Name</td>
+			<td>{{ customer.name }}</td>
+		</tr>
+		<tr>
+			<td>Age</td>
+			<td>{{ customer.age }}</td>
+		</tr>
+	</table>
+</div>
+```
+
+Result:
+![ng-model](/images/ng-model.png)
 
 
 
