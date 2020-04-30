@@ -16,11 +16,11 @@ tags: [Spring, Spring Boot, beginner, Maven, Rest]
 	- 内置 TomCat
 2. 运行项目，创建简单的 info 页面
 3. 添加如下 Web Service
-	- GET 获得全部
-	- GET 获得特定某个
-	- POST 添加
-	- PUT 更新某个
-	- DELETE 删除某个
+	- GET 获得全部用户信息
+	- GET 获得某个用户信息
+	- POST 添加一个用户
+	- PUT 更新某个用户
+	- DELETE 删除某个用户
 
 <!--more-->
 
@@ -437,9 +437,11 @@ Melvin 的信息已经被替换掉了。
 	controller.js
 	service.js 
 	===============
-	controller.java
-	service.java
-	DAO.java
+	Controller.java
+	Service.java
+	Repository.java
+	===============
+	BD-table
 			
 
-** 继续学习 -> [学习 Spring Boot - 2]()**
+** 继续学习 -> [学习 Spring Boot](/categories/SpringBoot)**

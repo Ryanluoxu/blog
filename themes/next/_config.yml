@@ -358,7 +358,7 @@ han: false
 # Disqus
 disqus:
   enable: false
-  shortname:
+  shortname: ryanluoxu
   count: true
 
 # Hypercomments
