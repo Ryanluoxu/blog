@@ -1,19 +1,20 @@
 ---
 title: Blockchain Demo using Java
-date: 2018-04-15 15:34:33
+date: 2017-04-15 15:34:33
 categories: BlockChain
 tags: [BlockChain, Java, demo]
 ---
 
-A simple Java blockchain program running on console.
-This blog will be replaced soon since some of the concepts are wrong.
+This blog will be removed since some of the concepts are wrong.
+
+<!--more-->
 
 # Flow
 
 ## New Blockchain()
 
 1. create an empty chain
-2. create genesis block 
+2. create genesis block
 	1. with null previous hash, current timestamp and null transaction
 	2. calculateHash using SHA256;
 3. add genesis block into chain
@@ -34,7 +35,6 @@ This blog will be replaced soon since some of the concepts are wrong.
 	}
 ```
 
-<!--more-->
 
 ## Create account
 
@@ -72,10 +72,10 @@ This blog will be replaced soon since some of the concepts are wrong.
 		boolean isValidFromAddress = false;
 		boolean isValidFromKey = false;
 		boolean isValidToAddress = false;
-		
+
 		String fromAddress = newTransaction.getFromAddress();
 		String toAddress = newTransaction.getToAddress();
-		
+
 		for (Account account : accounts) {
 			if (account.getAddress().equals(fromAddress)) {
 				isValidFromAddress = true;
@@ -85,14 +85,14 @@ This blog will be replaced soon since some of the concepts are wrong.
 				break;
 			}
 		}
-		
+
 		for (Account account : accounts) {
 			if (account.getAddress().equals(toAddress)) {
 				isValidToAddress = true;
 				break;
 			}
 		}
-		
+
 		if (isValidToAddress && isValidFromAddress && isValidFromKey) {
 			pendingTransactions.add(newTransaction);
 		} else {
@@ -136,7 +136,7 @@ void minePendingTransaction(String miningRewardAddress) {
 		Block newBlock = new Block(getLatestBlock().getHash(), new Timestamp(System.currentTimeMillis()), pendingTransactions);
 		newBlock.mineBlock(difficulty);
 		chain.add(newBlock);
-		
+
 		// close pending transaction
 		for (Transaction transaction : pendingTransactions) {
 			// deduct from FromAddress
@@ -157,15 +157,15 @@ void minePendingTransaction(String miningRewardAddress) {
 					}
 				}
 			}
-			
+
 			if (isWithdrawSuccess && !isTopUpSuccess) {
 				System.out.println("miningRewardAddress to [" + miningRewardAddress + "] is not successful..");
 			}
 		}
-		
+
 		// cleare pending transaction
 		pendingTransactions = new ArrayList<>();
-		
+
 		// reward given in next new block
 		accounts.get(0).topUp(miningReward);
 		pendingTransactions.add(new Transaction("system", miningRewardAddress, miningReward));
@@ -188,10 +188,10 @@ public class RyanCoin {
 	static Blockchain blockchain;
 
 	public static void main(String[] args) {
-		
+
 		RyanCoin ryanCoin = new RyanCoin();
 		blockchain = new Blockchain();
-		
+
 		while (!option.equals("0")) {
 			ryanCoin.printMenu();
 			System.out.println("");
@@ -241,7 +241,7 @@ public class RyanCoin {
 		String fromKey;
 		String toAddress;
 		String amountStr;
-		
+
 		System.out.print("From Address : ");
 		fromAddress = scanner.nextLine();
 		System.out.print("From Key : ");
@@ -250,7 +250,7 @@ public class RyanCoin {
 		toAddress = scanner.nextLine();
 		System.out.print("Transaction Amount : ");
 		amountStr = scanner.nextLine();
-		
+
 		try {
 			double amount = Integer.valueOf(amountStr);
 			if (amount >= 0) {
@@ -295,7 +295,7 @@ public class RyanCoin {
 		System.out.println("\t4. View Account");
 		System.out.println("\t9. Ryan Bonus");
 		System.out.println("\t0. Destroy coin");
-		
+
 	}
 
 }
@@ -310,7 +310,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Blockchain {
-	
+
 	private List<Block> chain;
 	private Block genesisBlock;
 	private int difficulty;
@@ -318,7 +318,7 @@ public class Blockchain {
 	private long miningReward;
 	private long bonusAmount;
 	private List<Account> accounts;
-	
+
 	public Blockchain() {
 		chain = new ArrayList<>();
 		genesisBlock = createGenesisBlock();
@@ -329,7 +329,7 @@ public class Blockchain {
 		System.out.println("\tgenesisBlock.nonce : " + genesisBlock.getNonce());
 		System.out.println("\tgenesisBlock.timestamp : " + genesisBlock.getTimestamp());
 		System.out.println("");
-		
+
 		difficulty = 1;
 		pendingTransactions = new ArrayList<>();
 		miningReward = 1000;
@@ -341,38 +341,38 @@ public class Blockchain {
 	private Block createGenesisBlock() {
 		return new Block(null, new Timestamp(System.currentTimeMillis()), null);
 	}
-	
+
 	private Block getLatestBlock(){
 		return chain.get(chain.size()-1);
 	}
-	
+
 	public boolean isChainValid() {
-		
+
 		for (int i = 0; i < chain.size(); i++) {
 			Block currentBlock = chain.get(i);
 			Block previousBlock = chain.get(i-1);
-			
+
 			if (currentBlock.getHash() != currentBlock.calculateHash()) {
 				return false;
 			}
-			
+
 			if (currentBlock.getPreviousHash() != previousBlock.getHash()) {
 				return false;
 			}
 		}
-		
+
 		return true;
 	}
-	
+
 	void createTransaction(Transaction newTransaction, String fromKey) {
 		// verification
 		boolean isValidFromAddress = false;
 		boolean isValidFromKey = false;
 		boolean isValidToAddress = false;
-		
+
 		String fromAddress = newTransaction.getFromAddress();
 		String toAddress = newTransaction.getToAddress();
-		
+
 		for (Account account : accounts) {
 			if (account.getAddress().equals(fromAddress)) {
 				isValidFromAddress = true;
@@ -382,21 +382,21 @@ public class Blockchain {
 				break;
 			}
 		}
-		
+
 		for (Account account : accounts) {
 			if (account.getAddress().equals(toAddress)) {
 				isValidToAddress = true;
 				break;
 			}
 		}
-		
+
 		if (isValidToAddress && isValidFromAddress && isValidFromKey) {
 			pendingTransactions.add(newTransaction);
 		} else {
 			System.out.println("Invalid fromAddress, fromKey or toAddress..");
 		}
 	}
-	
+
 	void minePendingTransaction(String miningRewardAddress) {
 		Block newBlock = new Block(getLatestBlock().getHash(), new Timestamp(System.currentTimeMillis()), pendingTransactions);
 		newBlock.mineBlock(difficulty);
@@ -408,7 +408,7 @@ public class Blockchain {
 		System.out.println("\tnewBlock.nonce : " + newBlock.getNonce());
 		System.out.println("\tnewBlock.timestamp : " + newBlock.getTimestamp());
 		System.out.println("");
-		
+
 		// close pending transaction
 		for (Transaction transaction : pendingTransactions) {
 			// deduct from FromAddress
@@ -429,15 +429,15 @@ public class Blockchain {
 					}
 				}
 			}
-			
+
 			if (isWithdrawSuccess && !isTopUpSuccess) {
 				System.out.println("miningRewardAddress to [" + miningRewardAddress + "] is not successful..");
 			}
 		}
-		
+
 		// cleare pending transaction
 		pendingTransactions = new ArrayList<>();
-		
+
 		// reward given in next new block
 		accounts.get(0).topUp(miningReward);
 //		System.out.println("System top up mining reward amount : " + miningReward);
@@ -475,13 +475,13 @@ import java.sql.Timestamp;
 import java.util.List;
 
 public class Block {
-	
+
 	private long nonce;
 	private String previousHash;
 	private Timestamp timestamp;
 	private List<Transaction> transactions;
 	private String hash;
-	
+
 	public Block(String previousHash, Timestamp timestamp, List<Transaction> transactions) {
 		this.previousHash = previousHash;
 		this.timestamp = timestamp;
@@ -489,7 +489,7 @@ public class Block {
 		this.hash = calculateHash();
 		this.nonce = 0;
 	}
-	
+
 	String calculateHash() {
 		Encrypt encrypt = new Encrypt();
 		String strText = null;
@@ -505,7 +505,7 @@ public class Block {
 //		System.out.println("strText of block : "+strText);
 		return encrypt.SHA256(strText);
 	}
-	
+
 	void mineBlock(int difficulty) {
 		StringBuilder sb = new StringBuilder();
 		for (int i = 0; i < difficulty; i++) {
@@ -551,22 +551,22 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 public class Encrypt {
-	
+
 	public String SHA256(final String strText) {
 		return SHA(strText,"SHA-256");
 	}
-	
+
 	public String SHA512(final String strText) {
 		return SHA(strText,"SHA-512");
 	}
 
 	private String SHA(final String strText, final String strType) {
 		String strResult = null;
-		
+
 		if (strText != null && strText.length() > 0) {
-			
+
 			byte byteBuffer[] = null;
-			
+
 			try {
 				MessageDigest messageDigest = MessageDigest.getInstance(strType);
 				messageDigest.update(strText.getBytes());
@@ -574,7 +574,7 @@ public class Encrypt {
 			} catch (NoSuchAlgorithmException e) {
 				e.printStackTrace();
 			}
-			
+
 			StringBuffer strHexString = new StringBuffer();
 			if (byteBuffer != null && byteBuffer.length > 0) {
 				for (int i = 0; i < byteBuffer.length; i++) {
@@ -601,7 +601,7 @@ public class Encrypt {
 package io.ryanluoxu.blockchain;
 
 public class Transaction {
-	
+
 	private String fromAddress;
 	private String toAddress;
 	private double amount;
@@ -636,7 +636,7 @@ public class Transaction {
 	public void setAmount(double amount) {
 		this.amount = amount;
 	}
-	
+
 }
 
 ```
@@ -647,7 +647,7 @@ public class Transaction {
 package io.ryanluoxu.blockchain;
 
 public class Account {
-	
+
 	private String address;
 	private String key;
 	private double balance;
@@ -670,7 +670,7 @@ public class Account {
 		System.out.println("Top up of [" + amount + "] into [" + address + "] is successful..");
 		return true;
 	}
-	
+
 	public boolean withdraw(double amount) {
 		if (balance - amount >= 0) {
 			balance -= amount;

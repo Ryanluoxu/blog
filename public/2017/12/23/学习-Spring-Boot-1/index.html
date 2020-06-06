@@ -6,10 +6,10 @@
 
 
 <html class="theme-next gemini use-motion" lang="en">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="theme-color" content="#222">
 
 
@@ -20,8 +20,8 @@
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
 
 
 
@@ -40,7 +40,7 @@
 
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
 
 
 
@@ -48,9 +48,9 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
 
-<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css">
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.3">
@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="beginner,Spring,Spring Boot,Rest,Maven," />
+  <meta name="keywords" content="beginner,Spring,Spring Boot,Maven,Rest,">
 
 
 
@@ -79,12 +79,12 @@
 
 
 
-<meta name="description" content="声明：本文为 ryanluoxu 原创文章，欢迎转载，请在明显位置注明出处。 学习 Spring Boot 有一段时间，也看过很多人的教程，中途放弃了几次，又重新开始。需要很不负责地说，有些教程确实因为时间的关系，已经不适合用来学习参考了。 这篇博客包括以下内容：  项目初始化 Maven 的作用 内置 TomCat ">
-<meta name="keywords" content="beginner,Spring,Spring Boot,Rest,Maven">
+<meta name="description" content="声明：本文为 ryanluoxu 原创文章，欢迎转载，请在明显位置注明出处。 学习 Spring Boot 有一段时间，也看过很多人的教程，中途放弃了几次，又重新开始。需要很不负责地说，有些教程确实因为时间的关系，已经不适合用来学习参考了。 这篇博客包括以下内容：  项目初始化 Maven 的作用 内置 TomCat   运行项目，创建简单的 info 页面 添加如下 Web Service GE">
+<meta name="keywords" content="beginner,Spring,Spring Boot,Maven,Rest">
 <meta property="og:type" content="article">
 <meta property="og:title" content="学习 Spring Boot - 1">
 <meta property="og:url" content="https://ryanluoxu.github.io/2017/12/23/学习-Spring-Boot-1/index.html">
-<meta property="og:site_name" content="猎 日">
+<meta property="og:site_name" content="途探生灵">
 <meta property="og:description" content="声明：本文为 ryanluoxu 原创文章，欢迎转载，请在明显位置注明出处。 学习 Spring Boot 有一段时间，也看过很多人的教程，中途放弃了几次，又重新开始。需要很不负责地说，有些教程确实因为时间的关系，已经不适合用来学习参考了。 这篇博客包括以下内容：  项目初始化 Maven 的作用 内置 TomCat   运行项目，创建简单的 info 页面 添加如下 Web Service GE">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://ryanluoxu.github.io/images/spring-init.png">
@@ -94,7 +94,7 @@
 <meta property="og:image" content="https://ryanluoxu.github.io/images/post-result.png">
 <meta property="og:image" content="https://ryanluoxu.github.io/images/put-update-user.png">
 <meta property="og:image" content="https://ryanluoxu.github.io/images/put-result.png">
-<meta property="og:updated_time" content="2017-12-25T06:36:25.395Z">
+<meta property="og:updated_time" content="2020-04-30T09:23:19.532Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="学习 Spring Boot - 1">
 <meta name="twitter:description" content="声明：本文为 ryanluoxu 原创文章，欢迎转载，请在明显位置注明出处。 学习 Spring Boot 有一段时间，也看过很多人的教程，中途放弃了几次，又重新开始。需要很不负责地说，有些教程确实因为时间的关系，已经不适合用来学习参考了。 这篇博客包括以下内容：  项目初始化 Maven 的作用 内置 TomCat   运行项目，创建简单的 info 页面 添加如下 Web Service GE">
@@ -128,13 +128,13 @@
 
 
 
-  <link rel="canonical" href="https://ryanluoxu.github.io/2017/12/23/学习-Spring-Boot-1/"/>
+  <link rel="canonical" href="https://ryanluoxu.github.io/2017/12/23/学习-Spring-Boot-1/">
 
 
 
 
 
-  <title>学习 Spring Boot - 1 | 猎 日</title>
+  <title>学习 Spring Boot - 1 | 途探生灵</title>
   
 
 
@@ -162,14 +162,14 @@
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">猎 日</span>
+        <span class="site-title">途探生灵</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
       
-        <p class="site-subtitle">Learn as a programmer</p>
+        <p class="site-subtitle">A Programmer's Blog</p>
       
   </div>
 
@@ -192,7 +192,7 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
             
             Home
           </a>
@@ -202,7 +202,7 @@
         <li class="menu-item menu-item-about">
           <a href="/about/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
             
             About
           </a>
@@ -212,7 +212,7 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
             
             Tags
           </a>
@@ -222,7 +222,7 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
             
             Categories
           </a>
@@ -232,7 +232,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
             
             Archives
           </a>
@@ -242,7 +242,7 @@
         <li class="menu-item menu-item-commonweal">
           <a href="/404/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br>
             
             Commonweal 404
           </a>
@@ -285,12 +285,12 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Ryan Luo Xu 罗旭">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar1.JPG">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="猎 日">
+      <meta itemprop="name" content="途探生灵">
     </span>
 
     
@@ -326,14 +326,14 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2017-12-25T14:36:25+08:00">
-                2017-12-25
+              <time title="Post modified" itemprop="dateModified" datetime="2020-04-30T17:23:19+08:00">
+                2020-04-30
               </time>
             
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -376,7 +376,7 @@
           
             <span class="post-meta-divider">|</span>
             <span class="page-pv"><i class="fa fa-file-o"></i> View
-            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
             </span>
           
 
@@ -417,6 +417,7 @@
 </li>
 </ol>
 <a id="more"></a>
+
 <h1 id="项目初始化"><a href="#项目初始化" class="headerlink" title="项目初始化"></a>项目初始化</h1><p>Spring Boot 常用的初始方式有三种：</p>
 <ul>
 <li>Spring Initializer</li>
@@ -439,12 +440,16 @@
 </ul>
 <p>效果如下：<br><img src="/images/springboot-structure.png" alt="springboot-structure"></p>
 <h2 id="Maven-的作用"><a href="#Maven-的作用" class="headerlink" title="Maven 的作用"></a>Maven 的作用</h2><p>在我的理解中，Maven 主要的作用就是帮助管理 library。 作为一个框架，Spring 会用到很多其他的库，这些库也有自己的版本以及各种更新。 Maven 可以帮助节约大量的操作。</p>
-<p>比如<code>spring-boot-starter-web</code>, 用到几十个库，自己下载再添加，费时且可能出错。<br>而在 Maven 的 pom.xml 文件中，输入下面这段代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependencies&gt;</span><br><span class="line">	...</span><br><span class="line">	&lt;dependency&gt;</span><br><span class="line">		&lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">		&lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;</span><br><span class="line">	&lt;/dependency&gt;</span><br><span class="line">	...</span><br><span class="line">&lt;/dependencies&gt;</span><br></pre></td></tr></table></figure></p>
+<p>比如<code>spring-boot-starter-web</code>, 用到几十个库，自己下载再添加，费时且可能出错。<br>而在 Maven 的 pom.xml 文件中，输入下面这段代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependencies&gt;</span><br><span class="line">	...</span><br><span class="line">	&lt;dependency&gt;</span><br><span class="line">		&lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</span><br><span class="line">		&lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;</span><br><span class="line">	&lt;/dependency&gt;</span><br><span class="line">	...</span><br><span class="line">&lt;/dependencies&gt;</span><br></pre></td></tr></table></figure>
+
 <p>保存后，系统会自动添加 <code>Maven Dependencies</code>，里面会有所有相关的库。<br>之后只需在 pom.xml 中修改，保存之后，系统会自动完成更新。</p>
 <h2 id="内置的-TomCat"><a href="#内置的-TomCat" class="headerlink" title="内置的 TomCat"></a>内置的 TomCat</h2><p>这是一个困扰我很长一段时间的问题，程序开始工作，向外发布信息，需要在一个 Server 上运作。 所以一般的 Web Project，我们都会添加 TomCat 作为服务器，程序运行在 TomCat 上面。</p>
 <p>但是对于 Spring Boot 来说，就不需要了，在这里，其实它只是一个普通的 Java Project。 只是内置了 TomCat，可以在<code>Maven Dependencies</code>中找到<code>tomcat-embed-core-8.5.23.jar</code>等库，说明事实上程序运行依然是通过 TomCat 完成，内置的好处就是…有太多好处了。</p>
 <p>所以只需要按照普通的 Java 程序来运行即可。</p>
-<h1 id="运行项目，创建简单的-info-页面"><a href="#运行项目，创建简单的-info-页面" class="headerlink" title="运行项目，创建简单的 info 页面"></a>运行项目，创建简单的 info 页面</h1><h2 id="运行项目"><a href="#运行项目" class="headerlink" title="运行项目"></a>运行项目</h2><p>打开 DemoApplication.java，如下代码已经自动生成：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">import org.springframework.boot.SpringApplication;</span><br><span class="line">import org.springframework.boot.autoconfigure.SpringBootApplication;</span><br><span class="line"></span><br><span class="line">@SpringBootApplication</span><br><span class="line">public class DemoApplication &#123;</span><br><span class="line"></span><br><span class="line">	public static void main(String[] args) &#123;</span><br><span class="line">		SpringApplication.run(DemoApplication.class, args);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h1 id="运行项目，创建简单的-info-页面"><a href="#运行项目，创建简单的-info-页面" class="headerlink" title="运行项目，创建简单的 info 页面"></a>运行项目，创建简单的 info 页面</h1><h2 id="运行项目"><a href="#运行项目" class="headerlink" title="运行项目"></a>运行项目</h2><p>打开 DemoApplication.java，如下代码已经自动生成：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">import org.springframework.boot.SpringApplication;</span><br><span class="line">import org.springframework.boot.autoconfigure.SpringBootApplication;</span><br><span class="line"></span><br><span class="line">@SpringBootApplication</span><br><span class="line">public class DemoApplication &#123;</span><br><span class="line"></span><br><span class="line">	public static void main(String[] args) &#123;</span><br><span class="line">		SpringApplication.run(DemoApplication.class, args);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>直接按照普通的程序运行即可。</p>
 <p>Console 里面会得到 Spring 图标，以及几个关键提示：</p>
 <ul>
@@ -457,17 +462,20 @@
 <h2 id="添加-info-页面"><a href="#添加-info-页面" class="headerlink" title="添加 info 页面"></a>添加 info 页面</h2><ol>
 <li>添加 package: <code>io.ryanluoxu.springboot.demo.controller</code></li>
 <li>在此 package 下面创建 InfoController.java, 如下： <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">import org.springframework.web.bind.annotation.RequestMapping;</span><br><span class="line">import org.springframework.web.bind.annotation.RestController;</span><br><span class="line"></span><br><span class="line">@RestController</span><br><span class="line">public class InfoController &#123;</span><br><span class="line"></span><br><span class="line">	@RequestMapping(&quot;/info&quot;)</span><br><span class="line">	public String showInfo() &#123;</span><br><span class="line">		String info = &quot;This is a Spring Boot Starter Project by RyanLuoXu..&quot;;</span><br><span class="line">		return info;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 </li>
 </ol>
 <p>这样，事实上已经创建了一个简单的 web service。<br>运行程序，前往 <a href="http://localhost:8080/info" target="_blank" rel="noopener">http://localhost:8080/info</a> 即可看到 info 的内容。</p>
 <p>这里我们只是返回了一个字符串，下面我们以 JSON 格式返回更多的信息。</p>
 <h2 id="添加-moreinfo-页面"><a href="#添加-moreinfo-页面" class="headerlink" title="添加 moreinfo 页面"></a>添加 moreinfo 页面</h2><ol>
-<li>添加 package: io.ryanluoxu.springboot.demo.model</li>
+<li><p>添加 package: io.ryanluoxu.springboot.demo.model</p>
+</li>
 <li><p>在此 package下面创建 Info.java，如下：</p>
  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">public class Info &#123;</span><br><span class="line">	</span><br><span class="line">	private String description;</span><br><span class="line">	private String startDate;</span><br><span class="line">	private String author;</span><br><span class="line">	private String framework;</span><br><span class="line">	private String database;</span><br><span class="line">	</span><br><span class="line">	...setters and getters...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>在 InfoController.java 中添加：</p>
  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">@RequestMapping(&quot;/moreinfo&quot;)</span><br><span class="line">public Info showMoreInfo() &#123;</span><br><span class="line">	Info info = new Info();</span><br><span class="line">	</span><br><span class="line">	info.setAuthor(&quot;RyanLuoXu&quot;);</span><br><span class="line">	info.setDatabase(&quot;PostgreSQL&quot;);</span><br><span class="line">	info.setDescription(&quot;This is a Spring Boot Starter Project&quot;);</span><br><span class="line">	info.setFramework(&quot;Spring Boot&quot;);</span><br><span class="line">	info.setStartDate(&quot;2017-12-23&quot;);</span><br><span class="line">	</span><br><span class="line">	return info;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <ul>
 <li>创建 info 为一个类</li>
 <li>然后在 showMoreInfo() 里面定义它的内容，并且返回含有多个信息的 info 对象</li>
@@ -495,6 +503,7 @@
 </li>
 <li><p>在 io.ryanluoxu.springboot.demo.controller 下面，创建 UserController.java：</p>
  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">@RestController</span><br><span class="line">public class UserController &#123;</span><br><span class="line">	</span><br><span class="line">	@Autowired</span><br><span class="line">	private UserService userService;	// get one time instance</span><br><span class="line">	</span><br><span class="line">	@RequestMapping(&quot;/users&quot;)			// default method = SET</span><br><span class="line">	public ArrayList&lt;User&gt; getUserList()&#123;</span><br><span class="line">		ArrayList&lt;User&gt; userList = userService.getUserList();</span><br><span class="line">		return userList;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <ul>
 <li>这里获取了一个 userService 对象。 </li>
 <li>事实上是 Spring 巡视项目，根据 <code>@RestController</code> 和 <code>@Service</code> 创建了 userController 和 userService</li>
@@ -502,7 +511,8 @@
 <li>当 ~/users 的 web service 被翻牌的时候，getUserList() 运行，通过 userService.getUserList() 得到信息，返回给呼叫该服务的前端。</li>
 </ul>
 </li>
-<li>运行程序, 前往 <a href="http://localhost:8080/users" target="_blank" rel="noopener">http://localhost:8080/users</a> 得到：<br><img src="/images/get-uses.png" alt="get-uses"></li>
+<li><p>运行程序, 前往 <a href="http://localhost:8080/users" target="_blank" rel="noopener">http://localhost:8080/users</a> 得到：<br><img src="/images/get-uses.png" alt="get-uses"></p>
+</li>
 </ol>
 <p>这里通过 URL，得到所有用户信息，下面获取特定某个人的信息。</p>
 <h2 id="GET-获得特定某个"><a href="#GET-获得特定某个" class="headerlink" title="GET 获得特定某个"></a>GET 获得特定某个</h2><ol>
@@ -511,15 +521,20 @@
 </li>
 <li><p>在 UserController.java, 添加：</p>
  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">@RequestMapping(&quot;/users/&#123;name&#125;&quot;)</span><br><span class="line">public User getUserByName(@PathVariable String name) &#123;</span><br><span class="line">	User user = userService.getUserByName(name);</span><br><span class="line">	return user;</span><br><span class="line">&#125;</span><br><span class="line">// link &#123;name&#125; to name; &#123;name1&#125; X</span><br></pre></td></tr></table></figure>
+
 <ul>
 <li><code>@RequestMapping(&quot;/users/{name}&quot;)</code></li>
 <li><code>@PathVariable String name</code></li>
 </ul>
 </li>
-<li>controller 根据前端过来的 name 参数，呼叫 userService。</li>
-<li>userService 在用户列表里找到符合条件的信息，返回给 controller。</li>
-<li>controller 再以 JSON 格式返回给前端</li>
-<li>运行程序, 前往 <a href="http://localhost:8080/users/Melvin" target="_blank" rel="noopener">http://localhost:8080/users/Melvin</a>, 得到：<blockquote>
+<li><p>controller 根据前端过来的 name 参数，呼叫 userService。</p>
+</li>
+<li><p>userService 在用户列表里找到符合条件的信息，返回给 controller。</p>
+</li>
+<li><p>controller 再以 JSON 格式返回给前端</p>
+</li>
+<li><p>运行程序, 前往 <a href="http://localhost:8080/users/Melvin" target="_blank" rel="noopener">http://localhost:8080/users/Melvin</a>, 得到：</p>
+<blockquote>
 <p>{<br>“userName”: “Melvin”,<br>“age”: 30,<br>“nationality”: “Singaporean”<br>}</p>
 </blockquote>
 </li>
@@ -535,19 +550,22 @@
 </li>
 <li><p>在 UserController.java, 添加：</p>
  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">@RequestMapping(method=RequestMethod.POST, value=&quot;/users&quot;)</span><br><span class="line">public boolean addUser(@RequestBody User user) &#123;	// transfer RequestBody to User instance</span><br><span class="line">	boolean isSuccess = userService.addUser(user);</span><br><span class="line">	return isSuccess;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <ul>
 <li><code>@RequestMapping(method=RequestMethod.POST, value=&quot;/users&quot;)</code></li>
 <li><code>@RequestBody User user</code></li>
 </ul>
 </li>
-<li>对于前端来说：<ul>
+<li><p>对于前端来说：</p>
+<ul>
 <li>同样是 <code>http://localhost:8080/users/</code>，此时采用的是 POST 方法</li>
 <li>POST 的同时需要将添加的信息，以 JSON 的格式传递到 Controller</li>
 <li>Controller 再用 <code>@RequestBody User user</code> 传递给 Service</li>
 <li>Service 添加成功，返回一个 True。</li>
 </ul>
 </li>
-<li>运行程序，用 PostMan 来测试。</li>
+<li><p>运行程序，用 PostMan 来测试。</p>
+</li>
 </ol>
 <p>打开 PostMan：</p>
 <ol>
@@ -571,13 +589,16 @@
 </li>
 <li><p>在 UserController.java, 添加：</p>
  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">@RequestMapping(method=RequestMethod.PUT, value=&quot;/users/&#123;name&#125;&quot;)</span><br><span class="line">public boolean updateUserByName(@RequestBody User user, @PathVariable String name) &#123;	</span><br><span class="line">	boolean isSuccess = userService.updateUserByName(user, name);</span><br><span class="line">	return isSuccess;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <ul>
 <li><code>@RequestMapping(method=RequestMethod.PUT, value=&quot;/users/{name}&quot;)</code></li>
 <li><code>@RequestBody User user, @PathVariable String name</code></li>
 </ul>
 </li>
-<li>用 name 来选中某个用户，用 user 来更新信息。 成功，返回 true。</li>
-<li>运行程序，用 PostMan 来测试。</li>
+<li><p>用 name 来选中某个用户，用 user 来更新信息。 成功，返回 true。</p>
+</li>
+<li><p>运行程序，用 PostMan 来测试。</p>
+</li>
 </ol>
 <p>打开 PostMan：</p>
 <ol>
@@ -605,7 +626,8 @@
 </li>
 <li><p>用 name 来选中某个用户，删除成功，返回 true。</p>
 </li>
-<li>运行程序，用 PostMan 来测试。</li>
+<li><p>运行程序，用 PostMan 来测试。</p>
+</li>
 </ol>
 <p>打开 PostMan：</p>
 <ol>
@@ -620,8 +642,7 @@ Controller.java
 Service.java
 Repository.java
 ===============
-BD-table
-</code></pre><p><strong> 继续学习 -&gt; <a href="/categories/SpringBoot">学习 Spring Boot</a></strong></p>
+BD-table</code></pre><p>** 继续学习 -&gt; <a href="/categories/SpringBoot">学习 Spring Boot</a>**</p>
 
       
     </div>
@@ -648,7 +669,7 @@ BD-table
 
     
       <div id="wechat" style="display: inline-block">
-        <img id="wechat_qr" src="/images/微信打赏.png" alt="Ryan Luo Xu 罗旭 WeChat Pay"/>
+        <img id="wechat_qr" src="/images/微信打赏.png" alt="Ryan Luo Xu 罗旭 WeChat Pay">
         <p>WeChat Pay</p>
       </div>
     
@@ -693,9 +714,9 @@ BD-table
           
             <a href="/tags/Spring-Boot/" rel="tag"># Spring Boot</a>
           
-            <a href="/tags/Rest/" rel="tag"># Rest</a>
-          
             <a href="/tags/Maven/" rel="tag"># Maven</a>
+          
+            <a href="/tags/Rest/" rel="tag"># Rest</a>
           
         </div>
       
@@ -793,12 +814,10 @@ BD-table
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image"
-                src="/images/avatar1.JPG"
-                alt="Ryan Luo Xu 罗旭" />
+              <img class="site-author-image" itemprop="image" src="/images/avatar1.JPG" alt="Ryan Luo Xu 罗旭">
             
               <p class="site-author-name" itemprop="name">Ryan Luo Xu 罗旭</p>
-              <p class="site-description motion-element" itemprop="description">Share anything I have on programming</p>
+              <p class="site-description motion-element" itemprop="description">Share What I Learned</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -808,7 +827,7 @@ BD-table
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">39</span>
+                  <span class="site-state-item-count">42</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -821,7 +840,7 @@ BD-table
                 
 				  <a href="/categories/index.html">
 				
-                  <span class="site-state-item-count">21</span>
+                  <span class="site-state-item-count">24</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -834,7 +853,7 @@ BD-table
                 
 				  <a href="/tags/index.html">
 				
-                  <span class="site-state-item-count">108</span>
+                  <span class="site-state-item-count">116</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -895,7 +914,7 @@ BD-table
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#项目初始化"><span class="nav-number">1.</span> <span class="nav-text">项目初始化</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#初始化操作"><span class="nav-number">1.1.</span> <span class="nav-text">初始化操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Maven-的作用"><span class="nav-number">1.2.</span> <span class="nav-text">Maven 的作用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#内置的-TomCat"><span class="nav-number">1.3.</span> <span class="nav-text">内置的 TomCat</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#运行项目，创建简单的-info-页面"><span class="nav-number">2.</span> <span class="nav-text">运行项目，创建简单的 info 页面</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#运行项目"><span class="nav-number">2.1.</span> <span class="nav-text">运行项目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加-info-页面"><span class="nav-number">2.2.</span> <span class="nav-text">添加 info 页面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加-moreinfo-页面"><span class="nav-number">2.3.</span> <span class="nav-text">添加 moreinfo 页面</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#添加-Web-Service-GET-POST-PUT-amp-DELETE"><span class="nav-number">3.</span> <span class="nav-text">添加 Web Service : GET, POST, PUT & DELETE</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#GET-获得全部"><span class="nav-number">3.1.</span> <span class="nav-text">GET 获得全部</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GET-获得特定某个"><span class="nav-number">3.2.</span> <span class="nav-text">GET 获得特定某个</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#POST-添加"><span class="nav-number">3.3.</span> <span class="nav-text">POST 添加</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PUT-更新某个"><span class="nav-number">3.4.</span> <span class="nav-text">PUT 更新某个</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DELETE-删除某个"><span class="nav-number">3.5.</span> <span class="nav-text">DELETE 删除某个</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Web-Application-Layer"><span class="nav-number">4.</span> <span class="nav-text">Web Application Layer</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#项目初始化"><span class="nav-number">1.</span> <span class="nav-text">项目初始化</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#初始化操作"><span class="nav-number">1.1.</span> <span class="nav-text">初始化操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Maven-的作用"><span class="nav-number">1.2.</span> <span class="nav-text">Maven 的作用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#内置的-TomCat"><span class="nav-number">1.3.</span> <span class="nav-text">内置的 TomCat</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#运行项目，创建简单的-info-页面"><span class="nav-number">2.</span> <span class="nav-text">运行项目，创建简单的 info 页面</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#运行项目"><span class="nav-number">2.1.</span> <span class="nav-text">运行项目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加-info-页面"><span class="nav-number">2.2.</span> <span class="nav-text">添加 info 页面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加-moreinfo-页面"><span class="nav-number">2.3.</span> <span class="nav-text">添加 moreinfo 页面</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#添加-Web-Service-GET-POST-PUT-amp-DELETE"><span class="nav-number">3.</span> <span class="nav-text">添加 Web Service : GET, POST, PUT &amp; DELETE</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#GET-获得全部"><span class="nav-number">3.1.</span> <span class="nav-text">GET 获得全部</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GET-获得特定某个"><span class="nav-number">3.2.</span> <span class="nav-text">GET 获得特定某个</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#POST-添加"><span class="nav-number">3.3.</span> <span class="nav-text">POST 添加</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PUT-更新某个"><span class="nav-number">3.4.</span> <span class="nav-text">PUT 更新某个</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DELETE-删除某个"><span class="nav-number">3.5.</span> <span class="nav-text">DELETE 删除某个</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Web-Application-Layer"><span class="nav-number">4.</span> <span class="nav-text">Web Application Layer</span></a></li></ol></div>
             
 
           </div>
@@ -915,7 +934,7 @@ BD-table
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2017 &mdash; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; 2017 &mdash; <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -940,8 +959,7 @@ BD-table
 
         
 <div class="busuanzi-count">
-  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
   
     <span class="site-uv">
       <i class="fa fa-user"></i> Visitor

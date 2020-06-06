@@ -17,7 +17,7 @@ Next 默认的风格是 Muse。现有的四个风格里，我最喜欢 Gemini。
 **操作如下：**
 1. 打开 D:\blog\themes\next\_config.yml
 2. 找到 `Scheme Settings`
-3. 去掉 `Gemini` 前面的 `#`。 
+3. 去掉 `Gemini` 前面的 `#`。
 ```
 # Schemes
 #scheme: Muse
@@ -45,7 +45,7 @@ scheme: Gemini
 **操作如下：**
 1. 打开 D:\blog\themes\next\_config.yml
 2. 找到 `busuanzi_count`
-3. 如下修改： 
+3. 如下修改：
 ```
 busuanzi_count:
   # count values only if the other configs are false
@@ -64,6 +64,14 @@ busuanzi_count:
   page_pv_footer:
 ```
 
+**统计数字失效解决方案**
+1. 打开 `\themes\next\layout\_third-party\analytics\busuanzi-counter.swig`
+2. 将 src 替换：
+```
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+```
+
 ## 添加头像 ##
 
 
@@ -71,7 +79,7 @@ busuanzi_count:
 1. 将头像照片 `头像1.jpg` 保存到 D:\blog\themes\next\source\images 路径下。
 2. 打开 D:\blog\themes\next\_config.yml
 3. 找到 `Sidebar Avatar`
-4. 如下修改： 
+4. 如下修改：
 ```
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
@@ -92,11 +100,11 @@ avatar: /images/avatar1.JPG
 1. 打开 Git Bash：
 ``` bash
 cd /d/blog // 进入到 blog 所在文件夹
-hexo new page "about" 
+hexo new page "about"
 ```
 2. 打开 D:\blog\themes\next\_config.yml
 3. 找到 `Menu Settings`
-4. 如下修改： 
+4. 如下修改：
 ```
 menu:
   home: / || home
@@ -176,7 +184,7 @@ hexo new page "tags"
 {% endif %}
 ```
 
-没有深入研究，但应该是 `hasTagsPage` 没有实现，所以总是没有链接效果。所以给它加了一个 `else`   条件。就可以了。 
+没有深入研究，但应该是 `hasTagsPage` 没有实现，所以总是没有链接效果。所以给它加了一个 `else`   条件。就可以了。
 
 
 ## 分类和标签页面的自动生成 categories & tags ##
@@ -224,7 +232,7 @@ type: "tags"
 social:
   GitHub: https://github.com/Ryanluoxu || github
   Linkedin: https://www.linkedin.com/in/luo-xu-ryan-675a8041/ ||  linkedin
-  ZhiHu: https://www.zhihu.com/people/luojiuri/activities || 
+  ZhiHu: https://www.zhihu.com/people/luojiuri/activities ||
   #StackOverflow: https://stackoverflow.com/users/7640451/ryan-l || stack-overflow
   E-Mail: mailto:luoxu2011@gmail.com || envelope
   #右键复制: mailto:luoxu2011@gmail.com || envelope
@@ -241,7 +249,7 @@ social_icons:
   icons_only: false
   transition: false
   GitHub: github
-  Linkedin: linkedin 
+  Linkedin: linkedin
 ```
 
 ## 设置侧边栏社交链接 ##
@@ -251,4 +259,3 @@ social_icons:
 ## 参考 ##
 
 [NexT主题个性化修改与调试方案](http://blog.junyu.io/posts/0009-hexo-next-theme-modify.html)
-

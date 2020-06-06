@@ -5,8 +5,7 @@ categories: Java Basic
 tags: [Java, basic, Array, Vector, Set, Map]
 ---
 
-发现我们组长面试的时候，很喜欢问对方什么是Vector。
-由于长期以来，我比较喜欢用List，对其他类就生疏了，这里温习一下。
+Java集合的一些基础知识。
 
 # Array
 
@@ -51,16 +50,16 @@ Vector<String> v = new Vector<>();	// initial capacity is 10.
 ## Vector VS ArrayList
 
 ### Synchronization
-	
+
 - Vector is synchronized, only one thread at a time can access the code (thread-safe)
 - ArrayList is not synchronized, multiple threads can work on arrayList at the same time. (not thread-safe)
 
 ### Size
- - ArrayList increments 50% of the current array size 
+ - ArrayList increments 50% of the current array size
  - Vector increments 100%.
- 
+
 ### Traversal
- - Vector: Enumeration and Iterator 
+ - Vector: Enumeration and Iterator
  - ArrayList: Iterator
 
 ### Usage

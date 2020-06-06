@@ -6,10 +6,10 @@
 
 
 <html class="theme-next gemini use-motion" lang="en">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="theme-color" content="#222">
 
 
@@ -20,8 +20,8 @@
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
 
 
 
@@ -40,7 +40,7 @@
 
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
 
 
 
@@ -48,9 +48,9 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
 
-<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css">
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.3">
@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Linux,SSH,SCP,password,server," />
+  <meta name="keywords" content="Linux,SSH,SCP,password,server,">
 
 
 
@@ -79,15 +79,15 @@
 
 
 
-<meta name="description" content="声明：本文为 ryanluoxu 原创文章，欢迎转载，请在明显位置注明出处。 点这里跳过废话：直奔主题 Show me the code 有这样一个任务: 将同事发送的原始数据处理好之后，放进数据库。其中一个关键的步骤，就是原始数据的转移。 通常我们有两个服务器，一个是 Public_Server，一个是 Privat">
+<meta name="description" content="声明：本文为 ryanluoxu 原创文章，欢迎转载，请在明显位置注明出处。 点这里跳过废话：直奔主题 Show me the code 有这样一个任务: 将同事发送的原始数据处理好之后，放进数据库。其中一个关键的步骤，就是原始数据的转移。 通常我们有两个服务器，一个是 Public_Server，一个是 Private_Server。公开 Public_Server 的用户名和密码，这样其他同事">
 <meta name="keywords" content="Linux,SSH,SCP,password,server">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux - SSH or SCP without password">
 <meta property="og:url" content="https://ryanluoxu.github.io/2017/11/28/Linux-SSH-or-SCP-without-password/index.html">
-<meta property="og:site_name" content="猎 日">
+<meta property="og:site_name" content="途探生灵">
 <meta property="og:description" content="声明：本文为 ryanluoxu 原创文章，欢迎转载，请在明显位置注明出处。 点这里跳过废话：直奔主题 Show me the code 有这样一个任务: 将同事发送的原始数据处理好之后，放进数据库。其中一个关键的步骤，就是原始数据的转移。 通常我们有两个服务器，一个是 Public_Server，一个是 Private_Server。公开 Public_Server 的用户名和密码，这样其他同事">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2017-11-30T15:08:16.777Z">
+<meta property="og:updated_time" content="2020-04-30T09:23:19.530Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux - SSH or SCP without password">
 <meta name="twitter:description" content="声明：本文为 ryanluoxu 原创文章，欢迎转载，请在明显位置注明出处。 点这里跳过废话：直奔主题 Show me the code 有这样一个任务: 将同事发送的原始数据处理好之后，放进数据库。其中一个关键的步骤，就是原始数据的转移。 通常我们有两个服务器，一个是 Public_Server，一个是 Private_Server。公开 Public_Server 的用户名和密码，这样其他同事">
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="https://ryanluoxu.github.io/2017/11/28/Linux-SSH-or-SCP-without-password/"/>
+  <link rel="canonical" href="https://ryanluoxu.github.io/2017/11/28/Linux-SSH-or-SCP-without-password/">
 
 
 
 
 
-  <title>Linux - SSH or SCP without password | 猎 日</title>
+  <title>Linux - SSH or SCP without password | 途探生灵</title>
   
 
 
@@ -154,14 +154,14 @@
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">猎 日</span>
+        <span class="site-title">途探生灵</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
       
-        <p class="site-subtitle">Learn as a programmer</p>
+        <p class="site-subtitle">A Programmer's Blog</p>
       
   </div>
 
@@ -184,7 +184,7 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
             
             Home
           </a>
@@ -194,7 +194,7 @@
         <li class="menu-item menu-item-about">
           <a href="/about/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
             
             About
           </a>
@@ -204,7 +204,7 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
             
             Tags
           </a>
@@ -214,7 +214,7 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
             
             Categories
           </a>
@@ -224,7 +224,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
             
             Archives
           </a>
@@ -234,7 +234,7 @@
         <li class="menu-item menu-item-commonweal">
           <a href="/404/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br>
             
             Commonweal 404
           </a>
@@ -277,12 +277,12 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Ryan Luo Xu 罗旭">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content>
       <meta itemprop="image" content="/images/avatar1.JPG">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="猎 日">
+      <meta itemprop="name" content="途探生灵">
     </span>
 
     
@@ -318,14 +318,14 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2017-11-30T23:08:16+08:00">
-                2017-11-30
+              <time title="Post modified" itemprop="dateModified" datetime="2020-04-30T17:23:19+08:00">
+                2020-04-30
               </time>
             
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -368,7 +368,7 @@
           
             <span class="post-meta-divider">|</span>
             <span class="page-pv"><i class="fa fa-file-o"></i> View
-            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
             </span>
           
 
@@ -403,7 +403,9 @@
 </blockquote>
 <a id="more"></a>
 <p>转移数据，作为整个工序里很小的一个步骤，通常我们会直接写进一个脚本里，这部分都会自动完成。<br>但是在服务器之间做这个操作，会需要提供密码，此时，整个脚本程序就会停下来。如果需要人来输入密码，就失去了脚本的意义了。<br>所以事先在两个服务器之间建立信任，这样，需要 SCP 或者 SSH 的时候，都不需要再输入密码。</p>
-<p><a name="直奔主题"><br><strong>具体操作如下：</strong></a></p>
+<a name="直奔主题">
+**具体操作如下：**
+
 <p>假设：</p>
 <ul>
 <li><p>Public_Server: </p>
@@ -411,14 +413,17 @@
 </li>
 <li><p>Private_Server:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">UserId: ryan</span><br></pre></td></tr></table></figure>
+
 </li>
 </ul>
 <p>在 Private_Server 上操作：</p>
 <ol>
 <li><p>创建钥匙。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa</span><br></pre></td></tr></table></figure>
+
 <p> 一路回车之后，做了两个钥匙。自己的钥匙是这个：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/home/ryan/.ssh/id_rsa</span><br></pre></td></tr></table></figure>
+
 <p> 公开的钥匙是这个：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/home/ryan/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
 </li>
@@ -430,12 +435,14 @@
 </li>
 <li><p>之后再进行 </p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh people@199.99.999.99</span><br></pre></td></tr></table></figure>
+
 <p> 或者</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp /home/ryan/anyfile.txt people@199.99.999.99:/home/people/</span><br></pre></td></tr></table></figure>
+
 <p> 都不需要提供密码。</p>
 </li>
 </ol>
-
+</a>
       
     </div>
     
@@ -461,7 +468,7 @@
 
     
       <div id="wechat" style="display: inline-block">
-        <img id="wechat_qr" src="/images/微信打赏.png" alt="Ryan Luo Xu 罗旭 WeChat Pay"/>
+        <img id="wechat_qr" src="/images/微信打赏.png" alt="Ryan Luo Xu 罗旭 WeChat Pay">
         <p>WeChat Pay</p>
       </div>
     
@@ -597,12 +604,10 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image"
-                src="/images/avatar1.JPG"
-                alt="Ryan Luo Xu 罗旭" />
+              <img class="site-author-image" itemprop="image" src="/images/avatar1.JPG" alt="Ryan Luo Xu 罗旭">
             
               <p class="site-author-name" itemprop="name">Ryan Luo Xu 罗旭</p>
-              <p class="site-description motion-element" itemprop="description">Share anything I have on programming</p>
+              <p class="site-description motion-element" itemprop="description">Share What I Learned</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -612,7 +617,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">39</span>
+                  <span class="site-state-item-count">42</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -625,7 +630,7 @@
                 
 				  <a href="/categories/index.html">
 				
-                  <span class="site-state-item-count">21</span>
+                  <span class="site-state-item-count">24</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -638,7 +643,7 @@
                 
 				  <a href="/tags/index.html">
 				
-                  <span class="site-state-item-count">108</span>
+                  <span class="site-state-item-count">116</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -703,7 +708,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2017 &mdash; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; 2017 &mdash; <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -728,8 +733,7 @@
 
         
 <div class="busuanzi-count">
-  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
   
     <span class="site-uv">
       <i class="fa fa-user"></i> Visitor
